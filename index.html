@@ -4,55 +4,55 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>gigi hiu – mobile games</title>
-<meta name="description" content="gigi hiu makes simple, colorful mobile games. Play Reflex Stack on Google Play.">
+<meta name="description" content="gigi hiu makes simple, colorful mobile games for Android: Reflex Stack, Echo Buffer and more.">
 <link rel="icon" href="icon.png">
-<style>
-  :root { --fiolet: #5c2b9e; --granat: #2b2e6e; --zolty: #ffd84a; --zielony: #38c76b; }
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #fff;
-         background: linear-gradient(160deg, var(--fiolet), var(--granat)) fixed; min-height: 100vh; }
-  main { max-width: 960px; margin: 0 auto; padding: 48px 16px 32px; text-align: center; }
-  .studio { letter-spacing: .2em; text-transform: uppercase; font-size: 14px; opacity: .75; }
-  .icon { width: 160px; height: 160px; border-radius: 36px; margin: 24px auto 16px; display: block;
-          box-shadow: 0 12px 32px rgba(0,0,0,.35); }
-  h1 { font-size: clamp(36px, 7vw, 56px); margin: 0 0 8px; }
-  .tagline { font-size: 20px; margin: 0 0 28px; opacity: .9; }
-  .tagline b { color: var(--zolty); }
-  .play { display: inline-block; background: var(--zielony); color: #fff; text-decoration: none; font-weight: 700;
-          font-size: 20px; padding: 16px 36px; border-radius: 16px; box-shadow: 0 6px 0 rgba(0,0,0,.25); }
-  .play:hover { filter: brightness(1.08); }
-  .shots { display: flex; gap: 16px; justify-content: center; margin: 40px 0; flex-wrap: wrap; }
-  .shots img { width: min(260px, 30%); min-width: 150px; border-radius: 20px; box-shadow: 0 10px 28px rgba(0,0,0,.35); }
-  .features { list-style: none; padding: 0; margin: 0 auto 40px; max-width: 520px; text-align: left; font-size: 17px; line-height: 1.9; }
-  .features li::before { content: "★ "; color: var(--zolty); }
-  footer { border-top: 1px solid rgba(255,255,255,.15); padding: 24px 16px 40px; text-align: center; font-size: 15px; opacity: .85; }
-  footer a { color: #fff; margin: 0 10px; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-  <div class="studio">gigi hiu</div>
-  <img class="icon" src="icon.png" alt="Reflex Stack icon">
-  <h1>Reflex Stack</h1>
-  <p class="tagline">Turn the tower. Match the <b>color!</b></p>
-  <a class="play" href="https://play.google.com/store/apps/details?id=com.gigihiu.reflexstack">Get it on Google Play</a>
-
-  <div class="shots">
-    <img src="shot1.png" alt="Gameplay: turn the tower to match the ball's color">
-    <img src="shot2.png" alt="Endless mode with score multiplier">
-    <img src="shot3.png" alt="Level complete with three stars">
+  <div class="hero">
+    <h1>gigi hiu</h1>
+    <p>Simple, colorful games for your phone.</p>
   </div>
 
-  <ul class="features">
-    <li>200 levels from relaxing to lightning-fast</li>
-    <li>Endless mode with a score multiplier</li>
-    <li>Collect diamonds and earn 3 stars on every level</li>
-    <li>Simple two-button controls, no account needed</li>
-  </ul>
+  <div class="games">
+
+    <!-- ===== NOWA GRA: skopiuj caly blok <article> ... </article> i zmien nazwy, teksty i linki ===== -->
+    <article class="game">
+      <a href="echo-buffer/"><img class="banner" src="echo-buffer/banner.png" alt="Echo Buffer"></a>
+      <div class="body">
+        <div class="title">
+          <img src="echo-buffer/icon.png" alt="">
+          <div><h2>Echo Buffer</h2><div class="genre">Memory · Puzzle</div></div>
+        </div>
+        <p>Watch the tiles light up and repeat the sequence. How far can your memory go?</p>
+        <div class="links">
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.gigihiu.EchoBuffer">Google Play</a>
+          <a href="echo-buffer/">More</a>
+          <a href="echo-buffer/privacy.html">Privacy</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="game">
+      <a href="reflex-stack/"><img class="banner" src="reflex-stack/banner.png" alt="Reflex Stack"></a>
+      <div class="body">
+        <div class="title">
+          <img src="reflex-stack/icon.png" alt="">
+          <div><h2>Reflex Stack</h2><div class="genre">Arcade · Reflex</div></div>
+        </div>
+        <p>Turn the tower and match the ball's color. 200 levels and an endless mode.</p>
+        <div class="links">
+          <a class="play" href="https://play.google.com/store/apps/details?id=com.gigihiu.reflexstack">Google Play</a>
+          <a href="reflex-stack/">More</a>
+          <a href="privacy.html">Privacy</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
 </main>
 <footer>
-  <a href="privacy.html">Privacy policy</a>
-  <a href="https://www.youtube.com/watch?v=M6ab54qwRuE">Trailer</a>
   <a href="mailto:gigihiu2018@gmail.com">Contact</a>
 </footer>
 </body>
